@@ -1,0 +1,45 @@
+name: 🐛 Báo cáo lỗi
+description: Tạo báo cáo để giúp chúng tôi cải thiện
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã dành thời gian báo cáo lỗi!
+  - type: input
+    id: contact
+    attributes:
+      label: Thông tin liên hệ (Tùy chọn)
+      description: Làm thế nào để chúng tôi liên lạc lại nếu cần thêm thông tin?
+      placeholder: ex. email@example.com hoặc GitHub username
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Mô tả lỗi
+      description: Lỗi xảy ra như thế nào? Bạn mong đợi điều gì sẽ xảy ra?
+      placeholder: Hãy mô tả chi tiết...
+      value: "Một lỗi đã xảy ra!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Phiên bản
+      description: Bạn đang sử dụng phiên bản nào?
+      options:
+        - v1.0.0 (Mặc định)
+        - v0.9.0
+        - Khác
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Quy tắc ứng xử
+      description: Bằng cách gửi issue này, bạn đồng ý tuân thủ quy tắc ứng xử của dự án.
+      options:
+        - label: Tôi đã đọc và đồng ý với quy tắc ứng xử
+          required: true

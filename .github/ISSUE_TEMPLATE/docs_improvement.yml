@@ -1,0 +1,25 @@
+name: 📝 Cải tiến tài liệu
+description: Đề xuất cải thiện tài liệu
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã giúp cải thiện tài liệu của dự án!
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả
+      description: Phần tài liệu nào cần được cải thiện? Tại sao?
+      placeholder: Mô tả chi tiết...
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Đề xuất cụ thể
+      description: Bạn đề xuất thay đổi nội dung như thế nào?
+      placeholder: Nội dung đề xuất...
+    validations:
+      required: false
