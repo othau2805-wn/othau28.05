@@ -1,0 +1,33 @@
+name: 🔧 Refactoring Code
+description: Đề xuất tái cấu trúc mã nguồn
+title: "[Refactor]: "
+labels: ["refactoring"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã đề xuất cải thiện chất lượng mã nguồn!
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả
+      description: Phần mã nào cần được tái cấu trúc? Tại sao?
+      placeholder: Mô tả chi tiết...
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Lợi ích mong đợi
+      description: Việc tái cấu trúc này mang lại lợi ích gì? (hiệu suất, dễ bảo trì, đọc hiểu...)
+      placeholder: Liệt kê lợi ích...
+    validations:
+      required: true
+  - type: input
+    id: affected-files
+    attributes:
+      label: Các file bị ảnh hưởng (Tùy chọn)
+      description: Liệt kê các file liên quan (phân cách bằng dấu phẩy)
+      placeholder: ex. src/main.js, utils/helper.py
+    validations:
+      required: false

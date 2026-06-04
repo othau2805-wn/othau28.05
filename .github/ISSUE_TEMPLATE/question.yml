@@ -1,0 +1,29 @@
+name: ❓ Câu hỏi / Thảo luận
+description: Đặt câu hỏi hoặc bắt đầu thảo luận
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã quan tâm đến dự án! Hãy đặt câu hỏi hoặc chia sẻ ý kiến của bạn.
+  - type: textarea
+    id: question
+    attributes:
+      label: Câu hỏi / Nội dung thảo luận
+      description: Hãy mô tả chi tiết câu hỏi hoặc chủ đề bạn muốn thảo luận.
+      placeholder: Nhập nội dung...
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Chủ đề
+      description: Chủ đề chính của câu hỏi/discussion là gì?
+      options:
+        - Cài đặt & Sử dụng
+        - Phát triển & Đóng góp
+        - Kiến trúc & Thiết kế
+        - Khác
+    validations:
+      required: false

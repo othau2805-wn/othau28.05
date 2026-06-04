@@ -1,0 +1,40 @@
+name: ✨ Yêu cầu tính năng
+description: Đề xuất ý tưởng cho dự án này
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã quan tâm đến việc cải thiện dự án!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Vấn đề cần giải quyết
+      description: Tính năng này giải quyết vấn đề gì? Có liên quan đến issue nào không?
+      placeholder: Mô tả vấn đề...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Giải pháp đề xuất
+      description: Mô tả cách bạn muốn tính năng này hoạt động.
+      placeholder: Mô tả giải pháp...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Các giải pháp thay thế
+      description: Bạn đã cân nhắc những giải pháp thay thế nào khác?
+      placeholder: Mô tả các giải pháp khác...
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Ngữ cảnh bổ sung
+      description: Thêm bất kỳ ngữ cảnh, ảnh chụp màn hình hoặc ví dụ nào khác về yêu cầu tính năng tại đây.
+    validations:
+      required: false
