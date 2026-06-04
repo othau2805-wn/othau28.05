@@ -1,5 +1,5 @@
 ---
-name: 🔧 Refactoring Code
+name: 🔧 Refactoring Code md
 about: Đề xuất tái cấu trúc mã nguồn để cải thiện chất lượng code
 title: '[REFACTOR] '
 labels: refactoring
